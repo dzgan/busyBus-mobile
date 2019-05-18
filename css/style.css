@@ -1,98 +1,93 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
-
-
-/*
-<style type="text/css>
-
-html {
-font-family: Arial, Helvetica, sans-serif; color:#333;
-}
 body {
-background:#ccc; margin:0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  width: 375px;
+  height: 812px;
+  position: absolute;
+  background-color: #0E5A8A;
+  overflow: hidden;
 }
-#container {
-width:600px;
-margin:0 auto;
-background:#fff;
+h2{
+  font-size: 23px;
 }
-#header {
-width:100%;
-height:60px;
-border-bottom:1px solid #c7c7c7;
-background:#333;
+h3{
+  font-size: 18px;
 }
+h4{
+  font-size: 14px;
+}
+.navbar-info {
+  z-index: 3;
+  position: absolute;
+  top: 48px;
+}
+.navbar-info li{
+  z-index: 3;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-self: baseline;
+  color: white;
+}
+#nav{
+  z-index: 2;
+  width: 375px;
+  height: 81px;
+  left: 0px;
+  top: 0px;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 33px rgba(0, 0, 0, 0.25);
+}
+.descriptionbanner{
+  z-index: 2;
+  position: absolute;
+  width: 375px;
+  height: 52px;
+top: 483px;
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+.map{
+  z-index: 1;
+  height: 500px;
 
-#logo {
-float:left;
-width:40px;
-height:40px;
-margin:10px;
-background:#ccc
-}
+  align: center;
+  width: 396px;
 
-#top_info {
-float:right;
-width:100px;
-height:40px;
-background:#666;
-border:1px solid #c7c7c7;
-margin:10px;
 }
+.chevron{
+  float: right;
+}
+.container {
+  position: relative;
+  top: 120px;
+  max-height: 276px;
+  width: 375px;
+  background-color: white;
+}
+.scrollable{
+  background-color: white;
+  z-index: 0;
+  position: absolute;
+  width: 375px;
+  height: 309px;
 
-#navbar {
-height:20px;
-clear:both;
+  bottom: -125px;
+  overflow-y: scroll;
 }
+.busInfo li{
+/*  width: 370px;
+  height: 64px;
+  border: 2px solid rgba(117, 117, 117, 0.27) ;
+  background-color: white;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-self: baseline;
+  display: inline-block;
+*/
 
-#navbar ul {
-margin:0;
-padding:0;
-list-style-type:none;
 }
-
-#navbar ul li {
-padding:10px;
-float:left;
-}
-
-#navbar ul li a {
-font-size:12px;
-float:left;
-float:left;
-padding:0 0 0 20px;
-display:block;
-}
-
-#banner {
-background:#666;
-height:120px;
-padding:20px;
-clear: both;
-}
-#left_col {
-float:left;
-width:250px;
-padding:20px;
-height:200px;
-border:1px solid #333;
-color:#FFF;
-background:#000;
-}
-#right_col {
-float:right;
-width:250px;
-height:200px;
-border:1px solid #333;
-color:#FFF;
-background:#000;
-padding:20px;
-}
-#footer {
-padding:20px;
-clear:both;
-}
-
-</style>
